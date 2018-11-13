@@ -54,7 +54,7 @@ module VaultCookbook
       attribute(:max_lease_ttl, kind_of: String)
       attribute(:ui, equal_to: [true, false])
       # Storage options
-      attribute(:storage_type, default: 'inmem', equal_to: %w(consul etcd zookeeper dynamodb s3 mysql postgresql inmem file))
+      attribute(:storage_type, default: 'inmem', equal_to: %w(consul etcd zookeeper dynamodb s3 mysql postgresql inmem file gcs))
       attribute(:storage_options, option_collector: true)
       attribute(:hastorage_type, kind_of: String)
       attribute(:hastorage_options, option_collector: true)
